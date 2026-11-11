@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subhash | Student Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <b>Subhash</b>
+  <div>
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    <button id="theme" aria-label="Toggle theme">🌙</button>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <span class="tag">Roll No: 25csmm32</span>
+  <h1>Hi, I’m <span id="typed"></span></h1>
+  <p>A computer science student who enjoys building clean, useful things for the web.</p>
+  <button onclick="location.hash='contact'">Get in touch</button>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I’m Subhash, a computer science student (Roll No. 25csmm32). I’m learning to design and build websites, solve problems with code, and turn ideas into working projects. I like learning by doing and I’m always looking for new things to build.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div id="skillList"></div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card"><h3>Personal Portfolio</h3><p>This responsive site built with HTML, CSS and JavaScript.</p></div>
+    <div class="card"><h3>To-Do App</h3><p>A simple task manager with add, complete and delete features.</p></div>
+    <div class="card"><h3>Calculator</h3><p>A clean calculator built with vanilla JavaScript.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form id="form">
+    <input id="n" placeholder="Your name" required>
+    <input id="e" type="email" placeholder="Your email" required>
+    <textarea id="m" rows="4" placeholder="Your message" required></textarea>
+    <button type="submit">Send message</button>
+    <div id="msg"></div>
+  </form>
+</section>
+
+<footer>© 2026 Subhash · 25csmm32</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
