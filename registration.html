@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create a registration using the front-end demo form."
+    />
+    <title>Register | Subhash Hemareddy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="registration-page">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">SUBHASH</a>
+        <nav aria-label="Main navigation" class="main-nav">
+          <a href="index.html">Portfolio</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="registration-main">
+      <section class="registration-card" aria-labelledby="registration-title">
+        <p class="eyebrow">Join the community</p>
+        <h1 id="registration-title">Create your account</h1>
+        <p class="registration-intro">
+          Enter your details below to try the registration form.
+        </p>
+
+        <form class="registration-form" id="registration-form" method="post">
+          <label for="registration-name">Full name</label>
+          <input
+            id="registration-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            maxlength="100"
+            required
+          />
+
+          <label for="registration-email">Email address</label>
+          <input
+            id="registration-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            maxlength="254"
+            required
+          />
+
+          <label for="registration-password">Password</label>
+          <input
+            id="registration-password"
+            name="password"
+            type="password"
+            autocomplete="new-password"
+            minlength="8"
+            maxlength="128"
+            aria-describedby="password-hint"
+            required
+          />
+          <span class="field-hint" id="password-hint">Use at least 8 characters.</span>
+
+          <label for="registration-confirm-password">Confirm password</label>
+          <input
+            id="registration-confirm-password"
+            name="confirmPassword"
+            type="password"
+            autocomplete="new-password"
+            minlength="8"
+            maxlength="128"
+            required
+          />
+
+          <label class="terms-label">
+            <input name="terms" type="checkbox" required />
+            <span>I agree to the terms and conditions.</span>
+          </label>
+
+          <button class="button primary" type="submit">Create account</button>
+          <p class="form-status" id="registration-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="registration-notice">
+          Demo only: this form does not create an account or send or store your
+          information. A secure server is needed for real registration.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
